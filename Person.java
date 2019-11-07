@@ -2,6 +2,7 @@ package PhoneBookAssignment;
 
 public class Person implements Comparable <Object>
 {
+	@SuppressWarnings("unused")
 	private String fullName;
 	private String firstName;
 	private String middleName;
@@ -130,11 +131,13 @@ public class Person implements Comparable <Object>
 	}
 
 	@Override
-	public int compareTo(Object person)
+	public int compareTo(Object arg0)
 	{
-		
-		return this.fullName.compareToIgnoreCase(((Person)person).getFullName());
+		// TODO Auto-generated method stub
+		return 0;
 	}
+
+	
 
 
 

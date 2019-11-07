@@ -24,10 +24,18 @@ public class PhoneBookActivity
 	}
 	public static void displayArray()
 	{
-		Arrays.sort(totalPeople);
+		//Arrays.sort(totalPeople);
+		
+		System.out.println("The total entries in the phone book: \n");
 		for (int i = 0; i < totalPeople.length; i++)
 		{
-			System.out.print(totalPeople[i].toString() + "\n");  
+			System.out.print(totalPeople[i].toString() + "\n");
+			
+		}
+		
+		for (int i=0; i<5; i++)
+		{
+			System.out.println("\n");
 		}
 	}
 	public static void searchArray(String searchVar, int choice)
@@ -297,80 +305,88 @@ public class PhoneBookActivity
 					
 					
 					case 1: 
+						Scanner input1= new Scanner(System.in);
 						System.out.println("Edit First Name ");
 						System.out.println("The current First Name is "+totalPeople[indexSpot].getFirstName());
 						System.out.println("Please enter the New First Name: ");
-						temp = keyboard.nextLine();
+						temp = input1.nextLine();
 						totalPeople[indexSpot].setFirstName(temp);
 						System.out.println("\nThe First Name has been updated to "+ totalPeople[indexSpot].getFirstName());
 					
 					break;
 					
 					case 2: 
+						Scanner input2= new Scanner(System.in);
 						System.out.println("Edit Middle Name ");
 						System.out.println("The current Middle Name is "+totalPeople[indexSpot].getMiddleName());
 						System.out.println("Please enter the New Middle Name: ");
-						temp = keyboard.nextLine();
+						temp = input2.nextLine();
 						totalPeople[indexSpot].setMiddleName(temp);
 						System.out.println("\nThe Middle Name has been updated to "+ totalPeople[indexSpot].getMiddleName());
 										
 					break;
 					
 					case 3: 
+						Scanner input3= new Scanner(System.in);
 						System.out.println("Edit Last Name ");
 						System.out.println("The current Last Name is "+totalPeople[indexSpot].getLastName());
 						System.out.println("Please enter the New Last Name: ");
-						temp = keyboard.nextLine();
+						temp = input3.nextLine();
 						totalPeople[indexSpot].setLastName(temp);
 						System.out.println("\nThe Last Name has been updated to "+ totalPeople[indexSpot].getLastName());
 									
 					break;
 					
 					case 4: 
+						Scanner input4= new Scanner(System.in);
 						System.out.println("Edit Street Address ");
 						System.out.println("The current Street Address is "+totalPeople[indexSpot].getAddress().getStreet());
 						System.out.println("Please enter the New Last Name: ");
-						temp = keyboard.nextLine();
+						temp = input4.nextLine();
 						totalPeople[indexSpot].getAddress().setStreet(temp);
 						System.out.println("\nThe Street Address has been updated to "+ totalPeople[indexSpot].getAddress().getStreet());
 									
 					break;
 						
 					case 5: 
+						Scanner input5= new Scanner(System.in);
 						System.out.println("Edit City ");
 						System.out.println("The current City is "+totalPeople[indexSpot].getAddress().getCity());
 						System.out.println("Please enter the New City: ");
-						temp = keyboard.nextLine();
+						temp = input5.nextLine();
 						totalPeople[indexSpot].getAddress().setCity(temp);
 						System.out.println("\nThe City has been updated to "+ totalPeople[indexSpot].getAddress().getCity());
 									
 					break;
 						
 					case 6: 
+						Scanner input6= new Scanner(System.in);
 						System.out.println("Edit State ");
 						System.out.println("The current State is "+totalPeople[indexSpot].getAddress().getState());
 						System.out.println("Please enter the New State: ");
-						temp = keyboard.nextLine();
+						temp = input6.nextLine();
 						totalPeople[indexSpot].getAddress().setState(temp);
 						System.out.println("\nThe State has been updated to "+ totalPeople[indexSpot].getAddress().getState());
 									
 					break;
 						
 					case 7: 
+						Scanner input7= new Scanner(System.in);
 						System.out.println("Edit Zip ");
 						System.out.println("The current Zip is "+totalPeople[indexSpot].getAddress().getZipCode());
 						System.out.println("Please enter the New Zip: ");
-						temp = keyboard.nextLine();
+						temp = input7.nextLine();
 						totalPeople[indexSpot].getAddress().setZipCode(temp);
 						System.out.println("\nThe Zip has been updated to "+ totalPeople[indexSpot].getAddress().getZipCode());
 									
 					break;
 						
 					case 8: 
+						Scanner input8= new Scanner(System.in);
 						System.out.println("Edit Main Phone Number ");
 						System.out.println("The current Number is "+totalPeople[indexSpot].getHomeNumber());
 						System.out.println("Please enter the Number: ");
-						temp = keyboard.nextLine();
+						temp = input8.nextLine();
 						totalPeople[indexSpot].setHomeNumber(temp);
 						System.out.println("\nThe Number has been updated to "+ totalPeople[indexSpot].getHomeNumber());
 									
